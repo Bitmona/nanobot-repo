@@ -42,7 +42,7 @@ export default class Sprite1 extends Sprite {
         yield;
       }
       if (this.stage.vars.clones == 300) {
-        this.penColor = this.random(1, 255), this.random(1, 255), this.random(1, 255);
+        this.penColor = Color.rgb(this.random(1, 255), this.random(1, 255), this.random(1, 255));
         this.penSize = 1;
         this.goto(this.random(-240, 240), this.random(-180, 180));
         this.penDown = true;
